@@ -225,6 +225,37 @@ html, body {
   top: 50%;
 }
 
+html, body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box {
+  font-size: 2rem;
+  background: white;
+  margin: auto;
+  margin-top: 5%;
+  max-width: 30%;
+  padding: 20px 50px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.box:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  border-left: 8px solid gray;
+}
+
 .container {
   width: 80vw;
   margin: 2rem auto;
